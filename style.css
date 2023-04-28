@@ -2,14 +2,13 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: gilroy;
+    font-family: montserrat;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
 #main{
-    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -20,124 +19,86 @@ html,body{
     background-color: #fff;
 }
 #page>img{
-    width: 48%;
     position: absolute;
     right: 5%;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 50%;
 }
-#nav{
+#page>#nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 40px;
+    padding: 0px 30px;
+    position: absolute;
+    z-index: 9;
     height: 10%;
     width: 100%;
-    background-color: #fff;
 }
-#nav>img{
-    width: 10%;
-}
-#nav>#center-nav{
+#center-nav{
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
-#nav>#center-nav>a{
+#center-nav>a{
     text-decoration: none;
     color: #000;
     font-weight: 500;
+    font-size: 18px;
 }
 #nav>input{
     padding: 10px 5px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #000;
     border-radius: 10px;
-    border: 1.5px solid #707070;
+    border: 1px solid #dadada;
+    text-transform: uppercase;
 }
 #text{
-    height: 70%;
-    width: 40%;
-    /* background-color: red; */
+    padding: 30px 50px;
     position: relative;
-    left: 5%;
-    top: 5%;
-    padding: 30px 20px;
-    scale: 1;
+    top: 18%;
+    left: 8%;
+    height: 75%;
+    width: 35%;
+    scale: 1.1;
 }
 #text>h1{
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
+    margin-top: 20px;
+}
+#text>h4{
+    margin-top: 30px;
+    color: #2b2b2b;
+    font-size: 17px;
+    font-weight: 500;
 }
 #text>h5{
-    color: #9b9b9b;
-    font-family: montserrat;
-    margin-top: 30px;
-    font-size: 18px;
-    font-weight: 500;
-}
-#text>#buttons{
-    margin-top: 50px;
-}
-#text>#buttons>button{
-    margin-left: 10px;
-    padding: 15px 25px;
-    font-family: montserrat;
-    border: none;
-    border-radius: 10px;
-}
-#text>#buttons>#b1{
-    background-color: #8873EF;
-    border: none;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-}
-#text>#buttons>#b1>i{
-    color: #fff;
-    font-size: 20px;
-}
-#text>#buttons>#b2{
-    border: none;
-    color: #000;
-    font-size: 17px;
-    font-weight: 500;
-}
-#text>#buttons>#b2>i{
-    color: #000;
-    font-size: 20px;
-}
-#text>h6{
     color: #8873EF;
-    font-family: montserrat;
-    font-size: 15px;
     transform: rotate(-20deg);
     position: absolute;
-    top: 0%;
+    left: 3%;
+}
+#buttons{
+    position: absolute;
     left: 0%;
+    bottom: 18%;
+    height: 20%;
+    width: 100%;
 }
-#page>#bottom{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 30%;
-    height: 7%;
-    margin-left: 6.5%;
+#buttons>button{
+    padding: 10px 22px ;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
 }
-#page>#bottom>h1{
-    font-size: 20px;
-    font-weight: 400;
-    font-family: montserrat;
+#buttons>button>i{
+    font-size: 17px;
 }
-#page>#bottom>.social-media{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4vw;
-    width: 4vw;
-    background-color: #dadada55;
-    border-radius: 50%;
+#buttons>#b1{
+    margin-left: 20px;
+    background-color: #8873EF;
 }
-#page>#bottom>.social-media>i{
-    font-size: 30px;
+#buttons>#b2{
+    margin-left: 20px;
 }
 #page1{
     position: relative;
@@ -145,178 +106,153 @@ html,body{
     width: 100vw;
     background-color: #FCDA69;
 }
-#page1>#boxes{
-    height: 90%;
-    width: 35%;
+#page1>#left{
     position: absolute;
-    right: -8%;
-    top: 52%;
-    transform: translate(-50%,-50%);
+    right: 5%;
+    height: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
 }
-.box{
+#left>.box{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px;
-    gap: 20px;
-    border-top: 2px solid #000;
-    height: 34%;
+    height: 33.3%;
     width: 100%;
-    /* background-color: green; */
+    border-top: 2px solid #000;
 }
-.box>h1{
-    font-size: 60px;
-    font-weight: 500;
+#left>.box>h4{
+    font-size: 30px;
 }
-.box>h5{
-    font-size: 25px;
+#left>.box>h1{
+    font-size: 50px;
 }
-.arrow{
+.circle{
     display: flex;
     align-items: center;
     justify-content: center;
-    height:3vw;
-    width:3vw;
+    height: 3vw;
+    width: 3vw;
     background-color: #8873EF;
     border-radius: 50%;
 }
-.arrow>i{
-    font-size: 30px;
+.circle>i{
     color: #fff;
-    font-weight: 100;
+    font-size: 25px;
 }
-#text2{
+#text1{
+    margin: 50px 50px;
     height: 30%;
-    width: 40%;
+    width: 50%;
     position: absolute;
-    top: 10%;
-    left: 10%;
-    scale: 1.1;
+    z-index: 9;
 }
-#text2>h1{
-    font-size: 80px;
+#text1>h1{
+    font-size: 70px;
     margin-top: 20px;
 }
-#text2>h5{
-    color: #474747;
-    width: 80%;
+#text1>h4{
+    font-size: 17px;
+    color: #2b2b2b;
+    font-weight: 500;
+    width: 70%;
     margin-top: 20px;
 }
-#text2>h6{
+#text1>h5{
     color: #8873EF;
-    font-size: 15px;
+    transform: rotate(-20deg);
     position: absolute;
-    top: 0%;
     left: -2%;
-    rotate: -20deg;
 }
 #page1>img{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
     width: 10%;
-    position: relative;
-    top: 75%;
-    left: 8%;
 }
-
 #page2{
     position: relative;
     height: 100vh;
     width: 100vw;
     background-color: #fff;
 }
-#projects{
+#project{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70%;
+    height: 50%;
     width: 90%;
-    position: relative;
-    top: 30%;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 5%;
 }
-.project{
+.projects{
     border-top: 2px solid #000;
     height: 100%;
-    width: 30%;
-    padding-top: 20px;
+    width: 31%;
 }
-#first{
+#text3{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-}
-.circle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4vw;
-    width: 4vw;
-    background-color: #fff;
-    border-radius: 50%;
-    background-color: #8873EF;
-}
-.circle>i{
-    font-size: 30px;
-    color: #fff;
-    font-weight: 100;
-}
-#second{
-    height: 50%;
+    padding: 0px 20px;
+    height: 30%;
     width: 100%;
-    position: relative;
-    overflow: hidden;
-    top: 20%;
 }
-#second>img{
+#image{
+    height: 70%;
+    width: 100%;
+}
+#image>img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: top;
 }
 .p2{
     position: relative;
-   top: -30%;
+    top: -20%;
 }
-.p1{
+.p3{
     position: relative;
-   top: -15%;
+    top: -50%;
 }
-#text3{
+#text4{
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 5%;
+    height: 20%;
+    width: 30%;
 }
-#text3>h1{
-    font-size: 70px;
-    margin-top: 15px;
+#text4>h1{
+    margin-top: 20px;
+    font-size: 50px;
 }
-#text3>h6{
+#text4>h5{
     color: #8873EF;
+    transform: rotate(-20deg);
     position: absolute;
     top: 0%;
-    left: -10%;
-    rotate: -20deg;
-    font-size: 17px;
+    left: 0%;
 }
 #page3{
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 0px 60px;
+    position: relative;
     height: 100vh;
     width: 100vw;
     background-color: #FCDA69;
 }
-#text4{
-    position: relative;
-    height: 90%;
-    width: 50%;
+#left1{
+    height: 70%;
+    width: 35%;
 }
-#circle{
+#right1{
     position: relative;
-    display: flex;
-    align-items: center;
     height: 40vw;
     width: 40vw;
     border-radius: 50%;
@@ -324,84 +260,68 @@ html,body{
 }
 .line{
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding: 0px 30px;
     height: 10%;
     width: 100%;
-    padding: 0px 40px;
-}
-.line>h1{
-    font-size: 50px;
-    font-family: montserrat;
-    font-weight: 500;
-}
-.cir{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    height: 9vw;
-    width: 9vw;
-    background-color: #8873EF;
-    border-radius: 50%;
-
-}
-.cir>i{
-    font-size: 50px;
-    font-weight: 100;
 }
 .l1{
-    background-color: transparent;
-    position: relative;
-    width: 80%;
+    position: absolute;
+    z-index: 99;
+}
+.l2{
     left: 10%;
-    rotate: 10deg;
-    transform-origin: left;
+    top: 47%;
+    width: 65%;
     border-bottom: 2px solid #000;
+    position: absolute;
+    transform: rotate(15deg);
+    transform-origin: left;
 }
-#upper-text{
+.c1{
+    height: 12vw;
+    width: 12vw;
+}
+.c1>i{
+    font-size: 80px;
+}
+#text5{
     position: relative;
-    font-size: 30px;
-}
-#upper-text>h6{
-    color: #8873EF;
-    position: absolute;
-    top: 0%;
-    left: -5%;
-    transform: rotate(-20deg);
-    }
-#upper-text>h1{
-    padding-top: 50px;
-    font-family: montserrat;
-}
-#lower-box{
-    position: absolute;
-    bottom: 0%;
-    height: 60%;
+    height: 30%;
     width: 100%;
 }
-#lower-box>.low{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding-left: 20px;
-    border-top: 2px solid #000;
+#text5>h1{
+    padding-top: 20px ;
+    font-size: 60px;
+}
+#text5>h5{
+    color: #8873EF;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+#info{
+    margin-top: 50px;
     height: 50%;
     width: 100%;
 }
-.maps{
+.infos{
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 5vw;
-    width: 5vw;
+    gap: 20px;
+    padding-left: 20px;
+    height: 50%;
+    width: 100%;
+    border-top: 2px solid #000;
+}
+.i1{
     background-color: #fff;
-    border-radius: 50%;
 }
-.maps>i{
-    font-size: 40px;
-}
-#inner-contacts>h5{
-    color: #3e3e3e;
+.i1>i{
+    color: #000;
 }
